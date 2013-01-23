@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sidebar for Chrome Options</title>
+    <link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.10.0.custom.css" >
+    <script src="js/jquery-1.9.0.js"></script>
+    <script src="js/jquery-ui-1.10.0.custom.js"></script>
+    <script src="js/options.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/widgets.css" />
+</head>
+<body style="margin-top: 100px; margin-left: 100px; font-family: 'Lucida Grande', sans-serif; font-size: 100%;" class=>
+    <a href="https://github.com/mneubrand/chrome-sidebar" target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png" alt="Fork me on GitHub"></a>
+    <h1>Sidebar for Chrome Options</h1>
+    <form>
+        <table style="border-spacing: 20px">
+            <tr>
+                <td><label for="contextMenu">Add options to the context menu:</label></td>
+                <td><input type="checkbox" id="contextMenu" /></td>
+            <tr>
+                <td><label for="homePage">Default URL:</label></td>
+                <td><input type="text" id="homePage" size="50"/></td>
+            </tr>
+        </table>
+        <p>There are many sites which work great in a sidebar.</p>
+        <p>Here are some suggestions you can try by clicking on them:</p>
+        <ul>
+            <li style="margin-bottom: 10px"><a href="#" id="facebookLink">Facebook</a><button style="margin-left: 10px" onclick="$('#homePage').val('http://m.facebook.com/')">Set as Default URL</button></li>
+            <li style="margin-bottom: 10px"><a href="#" id="tasksLink">Google Tasks</a><button style="margin-left: 10px" onclick="$('#homePage').val('https://mail.google.com/tasks/ig')">Set as Default URL</button></li>
+            <li style="margin-bottom: 10px"><a href="#" id="plusLink">Google+</a><button style="margin-left: 10px" onclick="$('#homePage').val('https://plus.google.com/app/basic')">Set as Default URL</button></li>
+        </ul>
+    </form>
+    <button id="save" style="margin-top: 10px">Save</button>
+</body>
+</html>
