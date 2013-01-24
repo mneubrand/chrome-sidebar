@@ -16,13 +16,14 @@
   },
   "background": {
     "scripts": [ "js/sidebar.js" ],
-    "persistent": false
+    "persistent": true
   },
 
   "permissions": [
     "tabs",
     "http://*/*",
-    "https://*/*"
+    "https://*/*",
+    "webRequest"
   ],
 
   "web_accessible_resources": [
